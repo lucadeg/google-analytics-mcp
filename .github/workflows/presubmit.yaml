@@ -1,10 +1,10 @@
+
 # Runs tests on pull requests for main
 permissions: read-all
 name: Presubmit
 on:
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   test:
     strategy:
